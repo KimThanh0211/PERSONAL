@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Thêm các mẫu template vào gallery
     const templates = [
-        { title: 'Template 1', description: 'Description for template 1' },
-        { title: 'Template 2', description: 'Description for template 2' },
-        { title: 'Template 3', description: 'Description for template 3' },
-        // Thêm các template khác tại đây
+        { title: 'Romantic Template', description: 'A romantic template for your special day.' },
+        { title: 'Modern Template', description: 'A modern template with clean design.' },
+        { title: 'Classic Template', description: 'A classic template for traditional weddings.' }
     ];
 
     const gallery = document.querySelector('.template-gallery');
