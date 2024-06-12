@@ -1,15 +1,20 @@
+/* styles.css */
+
 /* Đặt các thuộc tính chung */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7; /* Màu nền nhạt */
+    color: #333; /* Màu chữ chính */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #e6e6e6; /* Màu nền của header */
+    color: #333; /* Màu chữ của header */
     padding: 10px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
 }
 
 nav ul {
@@ -23,8 +28,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333; /* Màu chữ của link */
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #b02a30; /* Màu chữ khi hover */
 }
 
 main {
@@ -38,6 +48,8 @@ section {
 .template-gallery {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .template-gallery div {
@@ -45,28 +57,56 @@ section {
     margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 8px; /* Bo góc */
+    background-color: #fff; /* Màu nền của các template */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+    transition: transform 0.3s ease; /* Hiệu ứng hover */
+}
+
+.template-gallery div:hover {
+    transform: scale(1.05); /* Hiệu ứng khi hover */
 }
 
 form {
     display: flex;
     flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 form label, form input, form textarea, form button {
     margin-bottom: 10px;
 }
 
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Bo góc input và textarea */
+    background-color: #f7f7f7; /* Màu nền nhạt cho input và textarea */
+}
+
 form button {
     padding: 10px;
-    background-color: #333;
+    background-color: #b02a30; /* Màu nền của button */
     color: #fff;
     border: none;
+    border-radius: 4px; /* Bo góc button */
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Hiệu ứng hover */
+}
+
+form button:hover {
+    background-color: #8e2024; /* Màu nền khi hover */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #e6e6e6; /* Màu nền của footer */
+    color: #333; /* Màu chữ của footer */
     text-align: center;
     padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
 }
